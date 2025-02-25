@@ -7,6 +7,7 @@
     <title>main</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body class="bg-slate-800">
@@ -31,34 +32,34 @@
                 <p class="text-[#08080880] mt-3">Enjoy easy and convenient financial
                     services with us. Cashout charge is
                     low and </p>
-                <div class="card mt-8 grid grid-cols-3 gap-3">
-                    <div class="box border rounded-2xl p-4 text-center">
+                <div  class="card mt-8 grid grid-cols-3 gap-3">
+                    <div id="add-money-box" class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/wallet1.png" alt="">
                         <h3>Add Money</h3>
                     </div>
-                    <div class="box border rounded-2xl p-4 text-center">
+                    <div id="cashout-box" class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/send1.png" alt="">
                         <h3>Cashout</h3>
                     </div>
-                    <div class="box border rounded-2xl p-4 text-center">
+                    <div class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/money1.png" alt="">
                         <h3>Transfer Money</h3>
                     </div>
-                    <div class="box border rounded-2xl p-4 text-center">
+                    <div class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/bonus1.png" alt="">
                         <h3>Get Bonus</h3>
                     </div>
-                    <div class="box border rounded-2xl p-4 text-center">
+                    <div class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/purse1.png" alt="">
                         <h3>Pay Bill</h3>
                     </div>
-                    <div class="box border rounded-2xl p-4 text-center">
+                    <div class="box  border rounded-2xl p-4 text-center">
                         <img class="w-6 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transactions</h3>
                     </div>
                 </div>    
             </section>
-            <section class="mt-10">
+            <section id="addMoney" class="mt-10">
                 <h1 class="text-lg font-bold">Add Money</h1>
                 <div class=" ">
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -87,10 +88,32 @@
                   </div>
 
             </section>
+            <!-- cash out from -->
+                <section id="cashout" class="mt-10">
+                    <h1 class="text-lg font-bold">Cash Out</h1>
+                    <div class=" ">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                          <div class="card rounded-3xl bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                              <fieldset class="fieldset">
+                                <label  class="fieldset-label ">Agent Number</label>
+                                <input value="01611960330" type="email" class="input" placeholder="Enter 11 digit account number" />
+                                <label class="fieldset-label ">Amount</label>
+                                <input id="Amount" type="number" class="input" placeholder="Enter amount to withdraw" />
+                                <label class="fieldset-label ">Pin Number </label>
+                                <input value="1234" id="pin-number" type="text" class="input" placeholder="Enter 4 digit pin number" />
+                                <button id="add-money" class="btn btn-neutral bg-[#0874F2] rounded-2xl mt-4">Withdraw Money</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            </section>
         </main>
     </section>
 
-<script src="script/addMoney.js"></script>
+<script src="script/index.js btn"></script>
+<script src="script/toggle.js"></script>
 </body>
 
 </html>

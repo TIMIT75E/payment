@@ -8,10 +8,10 @@ document.getElementById("login-btn").addEventListener("click", function (event) 
             window.location.href="./main.html"
         }
         else{
-            alert("pin thik nai")
+            alert("Invalid PIN")
         }
     }
     else{
-        alert("invalid account number")
+        alert("Invalid Account Number")
     }
 })

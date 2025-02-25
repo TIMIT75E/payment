@@ -9,11 +9,17 @@ document.getElementById('add-money').addEventListener("click", function (event) 
 
 
 
-    if (convertedPin === 1234) {
-        const sum = convertedMianBalance + conveertedAmount;
-        document.getElementById('main-balance').innerText = sum;
+    if (amount) {
+        if (convertedPin === 1234) {
+            const sum = convertedMianBalance + conveertedAmount;
+            document.getElementById('main-balance').innerText = sum;
+            alert(`${amount} Money Added `)
+        }
+        else {
+            alert("Invalid PIN")
+        }
     }
     else {
-       alert("nah mamah tomar pin a vul ase")
+        alert("Please Enter Your Amount")
     }
 })
