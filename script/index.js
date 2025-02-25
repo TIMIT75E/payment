@@ -7,7 +7,7 @@ document.getElementById('add-money').addEventListener("click", function (event) 
     const mainBalance = document.getElementById('main-balance').innerText;
     const convertedMianBalance = parseFloat(mainBalance)
 
-
+            console.log(amount)
 
     if (amount) {
         if (convertedPin === 1234) {
